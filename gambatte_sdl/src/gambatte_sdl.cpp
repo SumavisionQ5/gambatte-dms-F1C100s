@@ -330,8 +330,10 @@ public:
 	{
 		ids_[0].keydata = SDLK_RETURN;
 		ids_[1].keydata = SDLK_ESCAPE;
-		ids_[2].keydata = SDLK_LCTRL;
-		ids_[3].keydata = SDLK_LALT;
+		/* ids_[2].keydata = SDLK_LCTRL;
+		ids_[3].keydata = SDLK_LALT; */
+		ids_[2].keydata = SDLK_LALT;  	//We need to shift them for FC3000 TFT V2.
+		ids_[3].keydata = SDLK_LCTRL;  	//We need to shift them for FC3000 TFT V2.
 		ids_[4].keydata = SDLK_UP;
 		ids_[5].keydata = SDLK_DOWN;
 		ids_[6].keydata = SDLK_LEFT;
